@@ -9,7 +9,7 @@ export default function ExpenseList(props) {
 
     return (
         <ul className="expenses-list">
-            {props.data.map(expense => <ExpenseItem key={expense.id} title={expense.title} amount={expense.amount} date={expense.date} />)}
+            {props.data.map(expense => <ExpenseItem onDelete={props.onDeleting} key={expense.id} id={expense.id} title={expense.title} amount={expense.amount} date={expense.date} />)}
         </ul>
     )
 }

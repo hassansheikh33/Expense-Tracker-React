@@ -20,8 +20,8 @@ export default function NewExpense(props) {
 
     if (bool === false) {
         return (
-            <div className="new-expense__controls">
-                <button className="cstm new-expense" onClick={clickHandler}>Add a New Expense</button>
+            <div className='new-expense'>
+                <button className="new-expense__button" onClick={clickHandler}>Add a New Expense</button>
             </div>
         )
     } else if (bool === true) {
